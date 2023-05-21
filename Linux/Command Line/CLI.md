@@ -14,4 +14,12 @@
 - -- is a thing called a Flag. Running command with a flag means running a programm in a specific mode!
 - -a flag on ls command shows even hidden directories.
 - . (dot) in front of a file means it's a hidden file. Just like .gitignore  
-- 
+- short flag (-) in comparsion with long flag (--) means we want to pass a few flags at once
+- Using a short flag - with full flag name that we use with -- is a mistake, shell will understand e.g. -help command as passing -h -e -l -p
+- FLAGS ARE ADJUSTED TO PROGRAMS, NOT THE SHELLS! (In some cases order of a flags matters, in some doesn't)
+- BEST TO GIVE FLAGS FIRST AFTER COMMAND :)
+- FLAGS ARE CASE SENSITIVE!
+- Arrow keys are used for history of previous commands
+- JUST BE AWARE THAT BY BASH HISTORY someone can see your password! It's good to modify history in that case.
+- Clicking ctrl + R a few times will search previous usage of a specific pattern we're looking for.
+- Bash history is not updated every single time we're type something into the command line. It cashes last season and then save it into .bash_history file.

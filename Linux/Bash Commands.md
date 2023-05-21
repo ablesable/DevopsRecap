@@ -4,4 +4,8 @@
 - echo thing-we-want-to-print (just echo something, usefull when we print steps)
 - which program-we-re-running (gives us a path to the program we are running right now)
 - touch file (creates a file)
+- ls --ignore=directory-we-want-to-ignore (in printing to the console)
+- cd ~ (changes directory to home directory of a user e.g. /home/test)
+- ctrl + R (opens up a search for a last match in bash history) (Clicking an arrow will leave this pattern in normal console mode again).
+- tail specific_file (giving last lines in a specific file)
 - 
