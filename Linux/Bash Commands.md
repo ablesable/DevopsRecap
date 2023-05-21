@@ -1,0 +1,7 @@
+- pwd (print working directory)
+- clear (clearing the screen, but I can rewind to what was before)
+- ls path-to-directory (list everything inside a directory that we put a path on)
+- echo thing-we-want-to-print (just echo something, usefull when we print steps)
+- which program-we-re-running (gives us a path to the program we are running right now)
+- touch file (creates a file)
+- 
