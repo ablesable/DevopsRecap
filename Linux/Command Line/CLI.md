@@ -1,0 +1,1 @@
+- Using a command line is a programming line by line. That way is possible by REPL (Read Evauluate Print Loop)  programming environment inside the CLI.
