@@ -23,3 +23,4 @@
 - JUST BE AWARE THAT BY BASH HISTORY someone can see your password! It's good to modify history in that case.
 - Clicking ctrl + R a few times will search previous usage of a specific pattern we're looking for.
 - Bash history is not updated every single time we're type something into the command line. It cashes last season and then save it into .bash_history file.
+- Bang Bang can be typed into another command (!!)
