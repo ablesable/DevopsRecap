@@ -12,5 +12,5 @@
 - ctrl + k/u (yanking)
 - ctrl + c (interrupt program, sigint)
 - ctrl + d (sigquit)
-- kill (killing process, sends sigterm)
-- kill -9 (sigkill) //the most serious one
+- kill (killing process gradually, sends sigterm)
+- kill -9 (sigkill, kills process immediately, also their child processes)
