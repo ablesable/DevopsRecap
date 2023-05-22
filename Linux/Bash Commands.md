@@ -8,4 +8,9 @@
 - cd ~ (changes directory to home directory of a user e.g. /home/test)
 - ctrl + R (opens up a search for a last match in bash history) (Clicking an arrow will leave this pattern in normal console mode again).
 - tail specific_file (giving last lines in a specific file)
-- 
+- ctrl + shift + c/v (copying and pasting)
+- ctrl + k/u (yanking)
+- ctrl + c (interrupt program, sigint)
+- ctrl + d (sigquit)
+- kill (killing process, sends sigterm)
+- kill -9 (sigkill) //the most serious one
