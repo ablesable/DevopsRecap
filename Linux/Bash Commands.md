@@ -14,3 +14,5 @@
 - ctrl + d (sigquit)
 - kill (killing process gradually, sends sigterm)
 - kill -9 (sigkill, kills process immediately, also their child processes)
+- ls name-of-a-file* will find a lot of files with the name that starts like that.
+- 

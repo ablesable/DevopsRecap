@@ -25,6 +25,9 @@
 ## Touch
 - touch creates a file
 - Also modifies modify time.
+- touch file{1, 2, 3, 4} will create file1, file2, file3 and so on.
+- curly brackets is a way to repeat something in touch. (expansion)
+-  
 
 ## rm
 - Just removes files.
@@ -49,3 +52,14 @@ TO DO
 - -xzf archive.tar.gz -C destination (uncompress archive to destination directory).
 - -x flag (unpack), -z(because it's compressed file) -f (cause it's single archive) -C (for destination).
 - So -z flag is a opposite of a -x flag, but -xzf means we want to uncompress (x) a compressed (z) file. 
+
+## Wildcards
+- ls name-of-a-file* will find a lot of files with the name that starts like that.
+- Astrik will basically find a pattern that match the first part of a name in a file.
+- ? mark will find a pattern with one missing piece in a name of a file (e.g. ls name-??-a-file will find for example name-of-a-file file). As we see we can use a few question marks in looking for specific pattern.
+- touch name{1..30} will make 30 files. I think it's the self explanatory.
+- echo {0..100..10} will echo numbers from 0 to 100 with 10 mark step. It works as well with letters, like {A..z..10}.
+- {mark1..mark2}{mark3..mark4} will make permutation of all marks.
+
+-<b> We can make a file by a touch program with question mark (?) but we need to use \ backslash. (Escape character known from programming) </b>
+- e.g. touch file-with-question-mark\\?.ext
