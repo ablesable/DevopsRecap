@@ -44,8 +44,8 @@ TO DO
 ## tar 
 - tar is packing a lot of things together, just like zip file.
 - tar -cf archive.tar first_file.ext directory (archive.tar will be a new file with first_file.ext and directory).
-- -cf flag stands for one single file and compress.
+- -cf flag stands for one single file and packing.
 - -z flag will compress whole package, but we have to remember to add .gz to the end of a file.
-- -xzf archive.tar.gz - C destination (unpack archive to destination directory).
+- -xzf archive.tar.gz -C destination (uncompress archive to destination directory).
 - -x flag (unpack), -z(because it's compressed file) -f (cause it's single archive) -C (for destination).
-- 
+- So -z flag is a opposite of a -x flag, but -xzf means we want to uncompress (x) a compressed (z) file. 
