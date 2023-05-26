@@ -15,4 +15,4 @@
 - `$ sudo passwd newuser` helps to create a password for newuser
 - `$ su newuser ` switch to new user, but right now newuser has not got any privileges.
 - For giving a new user privileges we should use groups.
-
+- Giving privileges: `$ sudo usermod -aG sudo newuser` (newuser added to usermod group, so now can use sudo).
