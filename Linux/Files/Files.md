@@ -35,6 +35,7 @@
 - rm -r (recursive deleting for inside directories)
 - rm -f (forcing to remove), important becasue will not ask to permission to delete something
 - rm -rf / (DEATH SENTENCE)
+- rm -i (asking you if you want to delete every file in a dictionary)
 
 ## cp 
 - cp first_file.extension destination_file.extension (copying content from one file to another)
@@ -62,4 +63,11 @@ TO DO
 - {mark1..mark2}{mark3..mark4} will make permutation of all marks.
 
 -<b> We can make a file by a touch program with question mark (?) but we need to use \ backslash. (Escape character known from programming) </b>
-- e.g. touch file-with-question-mark\\?.ext
+- e.g. `$ touch file-with-question-mark\\?.ext`
+
+## Echo
+### Important: echo does not read from standard input, so this is not going to work:
+`$ cat file.txt | echo` 
+###  Results: ` `
+
+### Nothing!

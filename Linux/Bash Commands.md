@@ -14,5 +14,6 @@
 - ctrl + d (sigquit)
 - kill (killing process gradually, sends sigterm)
 - kill -9 (sigkill, kills process immediately, also their child processes)
-- ls name-of-a-file* will find a lot of files with the name that starts like that.
+- Using ampersand at the end of a command means, that we want to run this program in the background. After hitting enter this will return ID of this process on our console.
 - 
+
