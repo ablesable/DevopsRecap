@@ -14,6 +14,6 @@
 - To check libraries that e.g. bash depends on: `# ldd bin/bash`
 - We should copying libraries to new directories lib and lib64 by pasting paths from `# ldd bin/bash`
 - After that we can run chroot and then bash in new dictionary.
-- Do the same steps (copying feature/program to new root and then important libraries).
+- Do the same steps (copying feature/program to new root and then important libraries). E.g copy ls directory for using ls command and every libraries for ls.
 - Now, besides that we just are in the directory called /my-new-root, this is like a root directory to new system/changed root. `pwd` command will show `\` after running bash.
   
