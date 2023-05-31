@@ -12,3 +12,5 @@
 - In the same terminal typing `# cat /sys/fs/cgroup/cpu/sandbox/tasks` will show us what process was added to that group.
 - `# cat /sys/fs/cgroup/cpu/sandbox/cpu.shares` showing priorities.
 - Everything what is in the tree - please use only 5% of available power `# cgset -r cpu.cfs_period_=100000 -r cpu.cfs_quota_us=$[ 5000 * $(getconf _NPROCESSORS_ONLN) ] sandbox`
+- Everything what is in the tree - please use only 80Mb of memory, anything more will be runs out of memory.
+- After setting - this is for stats `# cgget -r memory.stat sandbox`
