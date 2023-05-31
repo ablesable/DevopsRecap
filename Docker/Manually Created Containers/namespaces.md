@@ -27,4 +27,4 @@ So our main goal is to limit that power!
 
 In old root we can see some processes of new root env, but from parents perspective is a normal. From child perspective we cannot see anything from old root.
 
-Parent env can still kill process that's running new environment. The new root with everything mounted is just a new <b>container</b>
+Parent env can still kill process that's running new environment. The new root with everything mounted is just a new <b>container</b>.
