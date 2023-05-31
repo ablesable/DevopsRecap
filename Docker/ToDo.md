@@ -1,8 +1,9 @@
 - After installing a WSL, [here](https://docs.docker.com/desktop/windows/wsl/) are instructions for installing docker for wsl 2 version.
+- Docker can use WSL features, so we can use that even from powershell. It doesn't matter if we run this explicitly from wsl linux, or from windows powershell.
 - Containers to download:
 - - `$ sudo docker pull ubuntu:bionic`
 - - `$ sudo docker pull node:12-stretch`
 - - `$ sudo docker pull node:12-alpine`
 - - `$ sudo docker pull nginx:1.17`
 - - `$ sudo docker pull mongo:3`
-- - `$ sudo docker pull hugo-builder:0.55`
+- - `$ sudo docker pull hugo-builder:0.55` (may require docker login)

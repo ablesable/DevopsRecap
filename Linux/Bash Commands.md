@@ -15,5 +15,5 @@
 - kill (killing process gradually, sends sigterm)
 - kill -9 (sigkill, kills process immediately, also their child processes)
 - Using ampersand at the end of a command means, that we want to run this program in the background. After hitting enter this will return ID of this process on our console.
-- 
+- cat /etc/issue (showning information about a system version).
 
