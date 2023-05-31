@@ -7,3 +7,7 @@ That's why we need namespaces. For limiting container environments.
 - From there I can use `$ kill (number)` and another shell process will not be working. 
 
 So our main goal is to limit that power!
+- after apt-get update for updating our container's ubuntu use `$ apt-get install debootstrap -y` for important tools. 
+- ` # debootstrap --variant=minbase bionic /better-root` is going to install minimal version of debootstrap (minbase) for bionic ubuntu inside /better-root folder.
+- <b>Debustrap is a Debian bootstrap</b> so this command will make a  Debian minimum bare file system based on a bionic ubuntu.
+- `# chroot . bash`
