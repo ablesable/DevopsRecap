@@ -19,8 +19,10 @@ So our main goal is to limit that power!
 
 ## Showing different processes in new root env:
 - after unsharing inside new root env we cannot use `ps aux` command.
-- Fot that we have to mount:
+- Fot that, we have to mount:
 
 `mount -t proc none /proc` \
 `mount -t tmpfs none /tmp` \
 `mount -t sysfs none /sys` 
+
+In old root we can see some processes of new root env, but from parents perspective is a normal. From child perspective we cannot see anything from old root.
