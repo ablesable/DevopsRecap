@@ -8,7 +8,13 @@ sftp - secure file transfer protocol
 
 pwd will show you only remotely working directory but **lpwd** will show local working directory.
 
+cd ----> lcd
+echo ----> !echo
+
 !echo and !cat also works as local versions of remotely working echo and cat.
 
 E.g. (changing names)
 `$ put sourcefile.txt newnamefile.txt`
+
+### exiting from sftp
+`$ bye`
