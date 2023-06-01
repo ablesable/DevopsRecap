@@ -20,5 +20,9 @@ Premade containers are called images. We can put containers on top of other cont
  Going there will be new file system as in previous, more manual examples.
 7. Now, familiar to us: `specific-folder # unshare --mount --uts --ipc --net --pid --fork --user --map-root-user chroot /specific-folder sh`
 8. `# pwd` we are in root directory, and unshared previous namespaces.
-9. 
+9. mounting: \
+    `# mount -t proc none /proc` \
+    `# mount -t sysfs none /sys` \
+    `# mount -t tmpfs none /tmp` 
+10. 
 
