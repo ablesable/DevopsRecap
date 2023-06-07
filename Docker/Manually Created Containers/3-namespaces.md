@@ -18,7 +18,7 @@ So our main goal is to limit that power!
 - This is essentialy <b> Unsharing namespaces </b>
 
 ## Showing different processes in new root env:
-- after unsharing inside new root env we cannot use `ps aux` command.
+- after unsharing, inside new root env we cannot use `ps aux` command.
 - Fot that, we have to mount:
 
 `mount -t proc none /proc` \
@@ -28,3 +28,6 @@ So our main goal is to limit that power!
 In old root we can see some processes of new root env, but from parents perspective is a normal. From child perspective we cannot see anything from old root.
 
 Parent env can still kill process that's running new environment. The new root with everything mounted is just a new <b>container</b>.
+-------------
+
+Article about linux namespaces [link](https://medium.com/@teddyking/linux-namespaces-850489d3ccf)
