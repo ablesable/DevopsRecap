@@ -1,0 +1,4 @@
+FROM node:12-stretch 
+
+CMD ["node", "-e", "console.log(\"this cmd line will be executed immediately\")"]
+CMD ["node", "-e", "console.log(\"Only this will be executed, last one cmds are executed\")"]
