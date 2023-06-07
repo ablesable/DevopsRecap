@@ -14,3 +14,14 @@ After building and running container with this simple nodejs server, we are not 
 --------
 `USER` command in dockerfile creates specific user, to not run this on **root**.
 Declaring a group by `--chown=user:group` is also important.
+
+-------
+After changing a user and a group we are allowed to `whoami` command.\
+`$ docker run --init --rm --publish 3000:3000 my-app whoami`
+
+-------
+`WORKDIR` is a place where to put files copied in container.
+
+`$ docker run --init --rm --publish 3000:3000 my-app pwd` will show a place where a file were copied, and we are in that direcotry in a new container.
+
+-------
