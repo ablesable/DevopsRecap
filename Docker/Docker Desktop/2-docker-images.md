@@ -31,4 +31,7 @@ The same situation is with this command, but with a specific command to what to 
 
 -----------
 
+`$ docker logs (my own name of a container)` for logs.
 
+-----------
+`$ docker rm (my own name of a container)` removing a metadata and the whole container.
