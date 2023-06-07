@@ -6,7 +6,7 @@ Premade containers are called images. We can put containers on top of other cont
 
 ## E.G.
 1. Running alpine docker container:
-`# docker run -ti -v /var/run/docker.sock:/var/run/docker.sock --privileged --rm --name docker-host docker:18.06.1-ce`
+`# docker run -ti -v /var/run/docker.sock:/var/run/docker.sock --privileged --rm --name docker-host docker:18.06.1-ce` (this connects to the docker on host machine)
 2. On top of that, running alpine with shell in the background: 
  `# docker run --rm -dit --name my-alpine alpine:3.10 sh` 
 3. Check what's running by:
@@ -24,5 +24,5 @@ Premade containers are called images. We can put containers on top of other cont
     `# mount -t proc none /proc` \
     `# mount -t sysfs none /sys` \
     `# mount -t tmpfs none /tmp` 
-10. 
+10. Every container can be seen on the docker desktop.
 
