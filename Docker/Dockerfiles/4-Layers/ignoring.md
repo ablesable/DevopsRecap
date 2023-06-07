@@ -1,0 +1,1 @@
+`$ touch .dockerignore` this is like .gitignore file. It will ignore files to not take they into account during build.
