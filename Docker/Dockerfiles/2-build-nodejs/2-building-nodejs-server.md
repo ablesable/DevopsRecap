@@ -13,3 +13,4 @@ After building and running container with this simple nodejs server, we are not 
 
 --------
 `USER` command in dockerfile creates specific user, to not run this on **root**.
+Declaring a group by `--chown=user:group` is also important.

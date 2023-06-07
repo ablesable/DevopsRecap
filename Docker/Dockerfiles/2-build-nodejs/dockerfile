@@ -2,6 +2,6 @@ From node:12-stretch
 
 USER node
 
-COPY index.js index.js
+COPY --chown=node:node index.js index.js
 
 CMD [ "node", "index.js" ]
