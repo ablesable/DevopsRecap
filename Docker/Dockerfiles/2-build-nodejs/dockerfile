@@ -2,6 +2,8 @@ From node:12-stretch
 
 USER node
 
+WORKDIR /home/node/code
+
 COPY --chown=node:node index.js index.js
 #these two lines are doing the same thing right now. 
 #copy does less, add is more powerful.
