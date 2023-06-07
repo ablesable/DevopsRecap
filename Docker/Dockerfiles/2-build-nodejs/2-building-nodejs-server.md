@@ -1,7 +1,7 @@
 `$ docker build -t my-name` -t flag is shorter version of --tag flag.
 
 --------
-COPY command in dockerfile copies content from one file to the another.
+`COPY` command in dockerfile copies content from one file to the another.
 
 --------
 After building and running container with this simple nodejs server, we are not able to connect.
@@ -12,3 +12,4 @@ After building and running container with this simple nodejs server, we are not 
 `$ docker run --init my-name` this wil run container with **tiny**, so ctrl + c will work on a container with node.js (Hack). Without this, SIGTERM should be used in an index.js file. Without it: `$ docker kill (process id)`.
 
 --------
+`USER` command in dockerfile creates specific user, to not run this on **root**.
