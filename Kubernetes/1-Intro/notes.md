@@ -21,4 +21,15 @@ Dockershim was not supported anymore from 1.24 version, and a container d starts
 
 `--advertise-client-urls (ip-of-a-server:2379)` this is the place with an address where etcd service listens. 
 
-When we use **kubeadm**, this tool deploys etcd server as a pod in **kube system namespace**.
+When we use **kubeadm**, this tool deploys etcd server as a **pod** in a **kube system namespace**.
+
+-------
+**Kube-api** server is the only component, which interacts with etcd data store.
+Making a new node in a cluster:
+1. Making a request for a new node to the kubeapi server. 
+2. Authenticating a user.
+3. Validating the request.
+4. Retrieving data.
+5. Updating ETCD.
+6. Info goes to Scheduler and a Kublet.
+
