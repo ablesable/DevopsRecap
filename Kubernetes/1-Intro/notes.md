@@ -15,6 +15,10 @@ Dockershim was not supported anymore from 1.24 version, and a container d starts
 
 **crictl**- used to debug container runtimes compatible with CRI. From Kubernetes community.
 
+-----
 
+ If we are making cluster from scratch, we have to install, configure **etcd** as a service in our master node.    
 
-![Photo](https://imgur.com/eV2BUGm)
+`--advertise-client-urls (ip-of-a-server:2379)` this is the place with an address where etcd service listens. 
+
+When we use **kubeadm**, this tool deploys etcd server as a pod in **kube system namespace**.
