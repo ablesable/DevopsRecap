@@ -24,7 +24,7 @@ Dockershim was not supported anymore from 1.24 version, and a container d starts
 When we use **kubeadm**, this tool deploys etcd server as a **pod** in a **kube system namespace**.
 
 -------
-**Kube-api** server is the only component, which interacts with etcd data store.
+**Kube-api** server **is the only component**, which interacts with etcd data store.
 Making a new node in a cluster:
 1. Making a request for a new node to the kubeapi server. 
 2. Authenticating a user.
@@ -32,4 +32,42 @@ Making a new node in a cluster:
 4. Retrieving data.
 5. Updating ETCD.
 6. Info goes to Scheduler and a Kublet.
+
+--------
+*Kube controller manager* - if a cluster was set up with admin tool, then Controller manager is one of the pods in **master node**.
+If we are on a master node, then it will be visibile not only by:\
+`kubectl get pods -n kube-system` where kube-system is a namespace. 
+Second option will be: \
+`ps aux | grep kube-controller-manager`
+
+----
+**kube scheduler** decides which **pod will be on which node**.\
+**Placing** a pod on a node is a job for **kubelet**.
+First of all, kube scheduler is filtering available nodes, and then ranks these which were good. If one of them will be more resources after putting the pod on it, then this node wins!
+
+If a cluster was made by kube admin tool, the scheduler was placed as a pod on a master node. 
+Showing details:
+`ps aux | grep kube-scheduler`
+
+-----
+ 
+If a scheduler decide what pod should be placed where, ten kublet **request container runtime engine** as docker to put a container in some place by pulling an image and running the instance. 
+
+KUBELET MUST BE INSTALLED ON A SPECIFIC WORKER NODE.
+On a specific node, to search for kubelet:\
+`ps aux | grep kubelet`
+
+------
+
+Pod network is an example of a virtual network, that spans across the nodes in the cluster. One pod must be exposed (its address) to the service, for other pods can reach it. For example, address of a pod with database, can change in time, so service should always have the access to database pod.\
+On every node, there will be a **kube-proxy** process that take care of *knowing every service* between the pods. It achives that by **ip tables**.\
+
+-----
+**deamonset** is a group of process that will be initiated on EVERY node in a cluster. 
+`kubectl get pods -n kube-system`\
+`kubectl get deamonset -n kube-system`\
+
+**The kube-proxy** is a good example of a deamonset.
+
+-----
 
