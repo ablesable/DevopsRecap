@@ -15,3 +15,7 @@ local cluster created!
 2. Create Replication controller from yaml in directory.
 
 Pod and replica controller with additional pods created!
+
+3. Running command for more replicas with or without changing a rc definition file.
+
+Few more replicas are made!
