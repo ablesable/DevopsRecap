@@ -9,3 +9,9 @@ The steps I did for wsl ubuntu:
 - Then we can create our pod from yaml.
 
 local cluster created!
+
+-----
+1. Create pod from yaml here in directory.
+2. Create Replication controller from yaml in directory.
+
+Pod and replica controller with additional pods created!
