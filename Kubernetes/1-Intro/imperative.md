@@ -1,0 +1,2 @@
+in imperative approach, using update objects command like `kubectl edit deployment nginx` kubernetes opens for us **similar** to definition file file. 
+There is for example status of the object. Changes made into this file, will apply to live object. 
