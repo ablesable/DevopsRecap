@@ -17,3 +17,6 @@ Left number is a host post.
 
 **app for -it flag is alwas after image**.
 
+---------
+
+`docker inspect --format "{{ .NetworkSettings.IPAddress }}" nameofcontaienr` checking ip of a container.
