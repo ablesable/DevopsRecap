@@ -18,3 +18,7 @@ Docker host network attaches container directly to host interface.\
 Docker containers use default DNS, and connection between them is done by this DNS service, cause ip addresses can change any moment.
 
 `docker (container) exec -it nameofcontainer ping nameofnetwork` this can show other addresses any time we run this command. That's why DNS is working.
+
+-------
+
+--link flag is for linking between containers.
