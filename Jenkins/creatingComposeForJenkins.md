@@ -8,3 +8,9 @@
 8. Running by `docker-compose up -d`
 9. Running `docker logs -f jenkins` for logs **there will be first password for configuration**
 10. Installing packages in the browser.
+
+---- 
+Changing dns:
+1. Check ip of a localmachine by `ip a`
+2. copy this ip addres to the host file in the System32 on windows.
+3. Because of that we can go to the site on specific name we gave.
