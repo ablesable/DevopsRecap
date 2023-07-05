@@ -5,3 +5,4 @@
 On a host it will not be listed in hash way, but the directory will be something like:\
 ` "Source": "/var/lib/docker/volumes/nameOfVolume/_data",` \
 This will show after typing: `docker container inspect NameOfContainer`.
+
