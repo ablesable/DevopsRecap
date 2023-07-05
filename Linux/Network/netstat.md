@@ -1,0 +1,2 @@
+Checking tcp available connections:
+`$ netstat -tlc` where t stands for checking what tcp connection are available, l stands for listening sockets, n stands for representing everything as numbers and not a hostnames.
