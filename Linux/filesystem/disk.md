@@ -25,3 +25,8 @@ For checking of disk free space `$ df -h`, for disk usage `$ du -h`
 ----
 Before mounting => checking:\
 `$ fsck nameofdisk` (the name of disk we know from parted or df -t commands)
+
+----
+
+The place for automatic mountin a disk: 
+`/etc/fstab`

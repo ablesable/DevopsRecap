@@ -15,10 +15,13 @@ Syslog is writing logs in plain text. Main folder for them is in `/var/log/syslo
 
 Logs from kernel are in `/var/log/dmesg`. **Available on a present boot.**
 
-**Every info with kernel infor from dmesg is in**\
+**Every info with kernel info from dmesg + additional info is in**\
 `/var/log/kern.log` . This is a file with **time**.
 
 -----------
+`dmesg` command is a command for seeing all boot info highlighted.
+
+-------
 
 Configuration file is `/etc/rsyslog.d`\
 In this file are also information of what logs are stored by syslogd.
@@ -26,3 +29,8 @@ In this file are also information of what logs are stored by syslogd.
 ------
 
 **syslogd and journald are often running in the same time on the same system.**
+
+
+--------
+
+Authentication logs are in `/var/log/auth.log` file.
