@@ -124,3 +124,42 @@ Bez włączenia pozwolnia na nic zdadzą się próby dodawania wybranej sieci pr
 ip route add default via 192.168.1.1
 
 ```
+# Konfiguracja serwera DNS
+
+```bash
+
+cat /etc/resolv.conf
+
+```
+Host najpierw zagląda do /etc/host i tam szuka wpisu dns, dopiero później zajmuje się adresem serwera dns. Lokalny plik `/etc/hosts` ma pierwszeństwo.
+
+# Opcja search w pliku /etc/resolv.conf
+
+W pliku `/etc/resolv.conf` na systemach Unix/Linux, opcja `search` służy do zdefiniowania domeny, która będzie automatycznie dopisywana do niepełnych nazw domenowych, które nie zawierają kropki (.) na końcu.
+
+Przykładowy wpis z opcją `search` może wyglądać tak:
+
+```
+search example.com
+```
+
+W tym przypadku, jeśli użytkownik wpisuje niepełną nazwę domenową, np. "server", system automatycznie dołącza do niej domenę `example.com`. W efekcie, system będzie próbował rozwiązać to jako "server.example.com".
+
+Przykład użycia:
+
+- Użytkownik wpisuje: `ping server`
+- System automatycznie przekształca to na: `ping server.example.com`
+
+Dzięki temu mechanizmowi użytkownik nie musi wpisywać pełnych nazw domenowych w przypadku lokalnych zasobów sieciowych. Opcja `search` jest szczególnie przydatna w sieciach lokalnych, gdzie istnieje wspólna domena dla wielu zasobów.
+
+Można również podać więcej niż jedną domenę, oddzielając je spacjami:
+
+```
+search example.com subdomain.example.com
+```
+
+Wówczas system będzie próbował automatycznie dopisywać obie domeny do niepełnych nazw domenowych.
+
+# Róznica pomiędzy ping - nslookup - dig
+
+nslookup i dig nie zaglądają do pliku `/etc/hosts` a patrzą bezpośrednio do pliku `/etc/resolv.conf`.
